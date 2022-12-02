@@ -16,17 +16,14 @@ class CreditCastWidget extends StatelessWidget {
       children: [
         Container(
           margin: const EdgeInsets.all(5),
-          child: IconButton(
-            onPressed: () {},
-            icon: ClipRRect(
-              borderRadius: BorderRadius.circular(5),
-              child: CachedNetworkImage(
-                imageUrl:
-                    "https://image.tmdb.org/t/p/w500${casts?.posterPath ?? casts?.backdropPath}",
-                placeholder: (context, url) =>
-                    const Center(child: CircularProgressIndicator()),
-                fit: BoxFit.cover,
-              ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(5),
+            child: CachedNetworkImage(
+              imageUrl:
+                  "https://image.tmdb.org/t/p/w500${casts?.posterPath ?? casts?.backdropPath}",
+              placeholder: (context, url) =>
+                  const Center(child: CircularProgressIndicator()),
+              fit: BoxFit.cover,
             ),
           ),
         ),
