@@ -31,4 +31,6 @@ The Application code is on the lib folder as usual in the Dart files.
 I've documented all the code with dartdoc, so it's not required to go through all the code to
 undestand it. To go find the html file do:
 
-... $ cd doc/api/index.html ...
+'''
+  $ cd doc/api/index.html
+''' 
