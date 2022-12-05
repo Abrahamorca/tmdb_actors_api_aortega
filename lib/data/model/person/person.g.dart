@@ -5,7 +5,7 @@ part of 'person.dart';
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
-
+///@nodoc
 _$_Person _$$_PersonFromJson(Map<String, dynamic> json) => _$_Person(
       id: json['id'] as int?,
       name: json['name'] as String?,

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-
+///@nodoc
 part of 'popular.dart';
 
 // **************************************************************************

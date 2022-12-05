@@ -3,6 +3,12 @@ import 'package:get/get.dart';
 import 'package:tmdb/data/model/person/person.dart';
 import 'package:tmdb/data/repository/person_repository.dart';
 
+///Manages the states of the person or persons.
+///
+/// [_getPersons] ensures that all the list of persons is completed, if not
+/// it'll handle the exceptions without collapsing the App.
+///
+/// [onEndScroll] ensures to keep loading persons when it arrives to the end.
 class PersonController extends GetxController
     with StateMixin<List<Person>>, ScrollMixin {
   static PersonController to = Get.find();

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+///@nodoc
 ThemeData theme(BuildContext context) => ThemeData(
       brightness: Brightness.light,
       primarySwatch: Colors.green,

@@ -4,7 +4,7 @@ import 'package:tmdb/data/api/api_service.dart';
 import 'controller/index.dart';
 import 'data/local/person_db.dart';
 import 'data/repository/person_repository.dart';
-
+///@nodoc
 class GlobalBindings extends Bindings {
   @override
   void dependencies() {

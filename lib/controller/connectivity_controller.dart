@@ -1,13 +1,19 @@
 import 'dart:async';
 
-import 'package:get/get.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:get/get.dart';
 
+///Class that handles the phone connectivity.
+///
+/// The [onInit] function looks if the phone has the connection or not and the
+/// [onClose] function stops listening from the [StreamSubscription] to stop the
+/// process.
 class ConnectivityController extends GetxController {
   static ConnectivityController to = Get.find();
   StreamSubscription? subscription;
 
   final _internetAvailable = RxBool(false);
+
   bool get isInternetAvailable => _internetAvailable.value;
 
   @override

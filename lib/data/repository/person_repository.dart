@@ -4,6 +4,7 @@ import '../local/person_db.dart';
 import '../model/person/person.dart';
 import '../model/popular/popular.dart';
 
+///[PersonRepository] manages the data from the rest of the classes.
 class PersonRepository {
   PersonRepository(PersonDb db, ApiService apiService)
       : _db = db,

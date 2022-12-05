@@ -3,7 +3,7 @@ import 'package:tmdb/data/model/person/person.dart';
 
 part 'popular.freezed.dart';
 part 'popular.g.dart';
-
+///[Popular] manages the list of popular persons from the json.
 @freezed
 class Popular with _$Popular {
   const Popular._();

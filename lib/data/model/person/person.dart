@@ -3,6 +3,10 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'person.freezed.dart';
 part 'person.g.dart';
 
+///[Person] class created with [freezed].
+///
+/// Freezed is used for saving lines of code when it comes to creating classes
+/// and its constructors.
 @freezed
 class Person with _$Person {
   const Person._();
@@ -28,6 +32,7 @@ class Person with _$Person {
   factory Person.fromJson(Map<String, dynamic> json) => _$PersonFromJson(json);
 }
 
+///Model of the [KnownFor] class for showing the cast.
 @freezed
 class KnownFor with _$KnownFor {
   const KnownFor._();
@@ -53,6 +58,7 @@ class KnownFor with _$KnownFor {
       _$KnownForFromJson(json);
 }
 
+///[OtherImages] is used for returning the rest of a [Person] images on the API.
 @freezed
 class OtherImages with _$OtherImages {
   const OtherImages._();

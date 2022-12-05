@@ -8,6 +8,9 @@ const _baseUrl = "https://api.themoviedb.org/3";
 String get baseUrl => _baseUrl;
 String apiKey = "b81da446c9b9c749c5af7160852f1529";
 
+/// Class that interacts with the API.
+///
+/// It has two functions the [get] and [post] to manage all the data from the API.
 class ApiService {
   final dio.Dio _client = dio.Dio();
   final _header = {
